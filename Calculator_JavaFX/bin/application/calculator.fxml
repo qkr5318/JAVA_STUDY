@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:controller="application.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="400.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="123.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+            <Text fx:id="result" layoutX="271.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="JUSTIFY" wrappingWidth="91.423828125">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <HBox prefHeight="94.0" prefWidth="359.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="103.0" prefWidth="107.0" text="7" textAlignment="CENTER" onAction="#operand">
+               <font>
+                  <Font size="49.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="8.0" right="6.0" top="11.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="103.0" prefWidth="107.0" text="8" textAlignment="CENTER" onAction="#operand">
+               <font>
+                  <Font size="49.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="8.0" right="6.0" top="11.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="103.0" prefWidth="107.0" text="9" textAlignment="CENTER" onAction="#operand">
+               <font>
+                  <Font size="49.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="8.0" right="6.0" top="11.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="111.0" prefWidth="109.0" text="+" textAlignment="JUSTIFY" onAction="#operator">
+               <font>
+                  <Font size="49.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="8.0" right="6.0" top="11.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </padding>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="103.0" prefWidth="107.0" text="4" textAlignment="CENTER" onAction="#operand">
+               <font>
+                  <Font size="49.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="8.0" right="6.0" top="11.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="103.0" prefWidth="107.0" text="5" textAlignment="CENTER" onAction="#operand">
+               <font>
+                  <Font size="49.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="8.0" right="6.0" top="11.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="103.0" prefWidth="107.0" text="6" textAlignment="CENTER" onAction="#operand">
+               <font>
+                  <Font size="49.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="8.0" right="6.0" top="11.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="111.0" prefWidth="109.0" text="-" textAlignment="JUSTIFY" onAction="#operator">
+               <font>
+                  <Font size="49.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="8.0" right="6.0" top="11.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="103.0" prefWidth="107.0" text="1" textAlignment="CENTER" onAction="#operand">
+               <font>
+                  <Font size="49.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="8.0" right="6.0" top="11.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="103.0" prefWidth="107.0" text="2" textAlignment="CENTER" onAction="#operand">
+               <font>
+                  <Font size="49.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="8.0" right="6.0" top="11.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="103.0" prefWidth="107.0" text="3" textAlignment="CENTER" onAction="#operand">
+               <font>
+                  <Font size="49.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="8.0" right="6.0" top="11.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="111.0" prefWidth="109.0" text="X" textAlignment="JUSTIFY" onAction="#operator">
+               <font>
+                  <Font size="49.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="8.0" right="6.0" top="11.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="103.0" prefWidth="107.0" text="C" textAlignment="CENTER" onAction="#operator">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="8.0" right="6.0" top="11.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="103.0" prefWidth="107.0" text="0" textAlignment="CENTER" onAction="#operand">
+               <font>
+                  <Font size="49.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="8.0" right="6.0" top="11.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="103.0" prefWidth="107.0" text="/" textAlignment="CENTER" onAction="#operator">
+               <font>
+                  <Font size="49.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="8.0" right="6.0" top="11.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="111.0" prefWidth="109.0" text="=" textAlignment="JUSTIFY" onAction="#operator">
+               <font>
+                  <Font size="49.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="8.0" right="6.0" top="11.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
